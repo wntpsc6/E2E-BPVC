@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
     <script src="load_table.js" defer></script>
     <style>
       @import url(https://fonts.googleapis.com/css?family=Open+Sans);
@@ -21,7 +21,6 @@
       td {
         vertical-align: middle;
         text-align: justify;
-        width: 0vw;
         min-width: 250px;
       }
       audio {
@@ -37,177 +36,63 @@
         border-radius: 15px;
         font-family: "Google Sans";
       }
-      .contentblock {
-        width: 950px;
-        margin: 0 auto;
-        padding: 0;
-        border-spacing: 25px 0;
+      .heading-size {
+        font-size: 33px;
       }
-      .contentblock td {
-        background-color: #fff;
-        padding: 25px 50px;
-        vertical-align: top;
-        box-shadow: 0px 0px 10px #999;
-        border-radius: 15px;
-      }
-      a, a:visited {
-        color: #224b8d;
-        font-weight: 300;
-      }
-      #authors {
+      h1, h2, h3, h4 {
         text-align: center;
-        margin-bottom: 20px;
-        font-size: 20px;
-      }
-      #conference {
-        text-align: center;
-        margin-bottom: 20px;
-        font-style: italic;
-      }
-      #authors a {
-        margin: 0 10px;
-      }
-      h1 {
-        text-align: center;
-        font-size: 35px;
         font-weight: 300;
       }
-      h2 {
-        font-size: 30px;
-        font-weight: 300;
-      }
-      h3 {
-        font-size: 25px;
-        font-weight: 300;
-      }
-      h4 {
-        font-size: 20px;
-        font-weight: 300;
-      }
-      code {
-        display: block;
-        padding: 10px;
-        margin: 10px 10px;
-      }
+      h1 { font-size: 35px; }
+      h2 { font-size: 30px; }
+      h3 { font-size: 25px; }
+      h4 { font-size: 20px; }
       p {
         line-height: 25px;
         text-align: justify;
       }
-      p code {
-        display: inline;
-        padding: 0;
-        margin: 0;
-      }
-      #teasers {
-        margin: 0 auto;
-      }
-      #teasers td {
-        margin: 0 auto;
+      #authors, #conference {
         text-align: center;
-        padding: 5px;
+        margin-bottom: 20px;
       }
-      #teasers img {
-        width: 250px;
+      #conference {
+        font-style: italic;
       }
-      #results img {
-        width: 133px;
-      }
-      #seeintodark {
-        margin: 0 auto;
-      }
-      #sift {
-        margin: 0 auto;
-      }
-      #sift img {
-        width: 250px;
-      }
-      .downloadpaper {
-        padding-left: 20px;
-        float: right;
-        text-align: center;
-      }
-      .downloadpaper a {
-        font-weight: bold;
-        text-align: center;
-      }
-      .teaser-img {
-        width: 80%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-      }
-      .teaser-gif {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-      }
-      .summary-img {
+      .teaser-img, .summary-img {
         width: 100%;
         display: block;
-        margin-left: auto;
-        margin-right: auto;
+        margin: auto;
       }
       .video-iframe {
-        width: 1000;
-        height: 800;
+        width: 1000px;
+        height: 800px;
         margin: auto;
         display: block;
-      }
-      .container {
-        display: flex;
-        align-items: center;
-        justify-content: center
-      }
-      .image {
-        flex-basis: 40%
-      }
-      .text {
-        font-size: 20px;
-        padding-left: 20px;
-      }
-      .center {
-        margin-left: auto;
-        margin-right: auto;
-      }
-      .boxshadow {
-        border: 1px solid;
-        padding: 10px;
-        box-shadow: 2px 2px 5px #888888;
-      }
-      .spacertr {
-        height: 8px;
-      }
-      .spacertd {
-        width: 40px;
-      }
-      .heading-size {
-      font-size: 33px;
       }
     </style>
   </head>
   <body>
     <div class="content">
       <div class="text-center">
-        <h1 class="heading-size"><strong>Disentangling the Prosody and Semantic Information with Pre-trained Model for In-Context Learning based Zero-Shot Voice Conversion</strong></h1>
-        <h5></h5>
+        <h1 class="heading-size">
+          <strong>Disentangling the Prosody and Semantic Information with Pre-trained Model for In-Context Learning based Zero-Shot Voice Conversion</strong>
+        </h1>
       </div>
-        <h2 style="text-align:center;">Abstract</h2>
-        <div style="text-align: justify;">
-            Voice conversion (VC) systems are always trained on clean speech and are unable to function properly in the presence of background sound/noise. However, in many instances, the background sound of speech and the context in which the speech occurs are semantically highly relevant and should also be retained. Existing approaches address this issue by incorporating a denoising module to separate speech from background sound before applying voice conversion, which increases system complexity and may lead to extra distortion. In this paper, we propose an end-to-end background-preserving voice conversion (E2E-BPVC) framework for the first time. By leveraging in-context learning (ICL), our model simultaneously modifies speech timbre and retains background sounds without requiring a separate denoising step. Both objective and subjective evaluations demonstrate that our method achieves performance comparable to denoising-based BPVC frameworks while maintaining a more streamlined and efficient system design.
-        </div>
-      </p>
+
+      <h2>Abstract</h2>
+      <div>
+        Voice conversion (VC) systems are always trained on clean speech and are unable to function properly in the presence of background sound/noise. However, in many instances, the background sound of speech and the context in which the speech occurs are semantically highly relevant and should also be retained. Existing approaches address this issue by incorporating a denoising module to separate speech from background sound before applying voice conversion, which increases system complexity and may lead to extra distortion. In this paper, we propose an end-to-end background-preserving voice conversion (E2E-BPVC) framework for the first time. By leveraging in-context learning (ICL), our model simultaneously modifies speech timbre and retains background sounds without requiring a separate denoising step. Both objective and subjective evaluations demonstrate that our method achieves performance comparable to denoising-based BPVC frameworks while maintaining a more streamlined and efficient system design.
+      </div>
     </div>
+
     <div class="content">
-      <h2 id="model-overview" style="text-align: center;">Architecture Overview</h2>
-      <body>
+      <h2 id="model-overview">Architecture Overview</h2>
       <p style="text-align: center;">
-        <img src="picture/overview.png" style="width: 60vw; margin-left: 0vw;">
+        <img src="picture/overview.png" style="width: 60vw;">
       </p>
-        <div style="text-align: justify;">
-          The overview of the E2E-BPVC system. The system learn to utilize content information from the semantic embedding, disentangle the background from the noisy condition and leverage contextual information from the unmasked mel spectrogram aligning with in-context learning (ICL).
-
-        </div>
-      </body>
+      <div>
+        The overview of the E2E-BPVC system. The system learns to utilize content information from the semantic embedding, disentangle the background from the noisy condition, and leverage contextual information from the unmasked mel spectrogram aligning with in-context learning (ICL).
+      </div>
     </div>
-
+  </body>
 </html>
