@@ -97,6 +97,46 @@
   </body>
   
   <div class="content">
+    <h2 style="text-align: center;">Without Background Samples</h2>
+    <div style="text-align: justify;">
+    <body>
+      <div style="text-align: justify;">
+        This section evaluates the systems' voice conversion capability w/o background. It converts the timbre of the source speech to match the timbre of the reference speech while preserving the content of the source speech. (The source and reference speeches are selected from the LibriTTS test-clean set.)
+      </div>
+    </body>
+    <HR>
+  </div>
+  <div style="margin-top: 0vh; text-align: center;">
+    <div class="table-responsive pt-3">
+      <ul class="pagination justify-content-center">
+        <li class="page-item active">
+          <a id="clean_vc-1" class="page-link" href="#">1</a>
+        </li>
+        <li class="page-item">
+          <a id="clean_vc-2" class="page-link" href="#">2</a>
+        </li>
+      </ul>
+      <table
+        class="table pt-2"
+        id="clean_vc"
+      >
+        <thead>
+          <tr>
+            <!-- <th>Text</th> -->
+            <th style="text-align: center;">Reference Speech</th>
+            <th style="text-align: center">Source Speech</th>
+            <th style="text-align: center">ICL-VC</th>
+            <th style="text-align: center">Denoise-VC II</th>
+            <th style="text-align: center">E2E-BPVC</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+  </div>
+
+  <div class="content">
     <h2 style="text-align: center;">Noise Background Samples</h2>
     <div style="text-align: justify;">
     <body>
