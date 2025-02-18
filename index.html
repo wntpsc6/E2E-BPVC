@@ -216,4 +216,71 @@
   </div>
   </div>
 
+  <div class="content">
+    <h2 style="text-align: center;">Real Video Samples</h2>
+    <div style="text-align: justify;">
+      This section evaluates the system's voice conversion capability in real video scenarios. It transforms the speaker’s timbre in a real video to match that of the reference speech while preserving the content and background sound of the original speech. (The source video is extracted from real movies, and the reference speech is selected from the LibriTTS test-clean set.)
+    </div>
+    <hr>
+    <div style="margin-top: 0vh; text-align: center;">
+      <div class="table-responsive pt-3">
+        <table class="table pt-2" id="music_vc">
+          <thead>
+            <tr>
+              <th style="text-align: center;">Reference Audio</th>
+              <th style="text-align: center;">Source Video</th>
+              <th style="text-align: center;">Converted Output</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Example Row 1 -->
+            <tr>
+              <td style="text-align: center;">
+                <audio controls>
+                  <source src="video_samples/1/4992_41797_000004_000002.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td style="text-align: center;">
+                <video controls width="250">
+                  <source src="video_samples/1/The_Great_Gatsby.mp4" type="video/mp4">
+                  Your browser does not support the video element.
+                </video>
+              </td>
+              <td style="text-align: center;">
+                <video controls width="250">
+                  <source src="video_samples/1/4992_41797_000004_000002-The_Great_Gatsby_step_32.mp4" type="video/mp4">
+                  Your browser does not support the video element.
+                </video>
+              </td>
+            </tr>
+            <!-- Example Row 2 -->
+            <tr>
+              <td style="text-align: center;">
+                <audio controls>
+                  <source src="video_samples/1/4992_41797_000004_000002.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td style="text-align: center;">
+                <video controls width="250">
+                  <source src="video_samples/1/The_Great_Gatsby.mp4" type="video/mp4">
+                  Your browser does not support the video element.
+                </video>
+              </td>
+              <td style="text-align: center;">
+                <video controls width="250">
+                  <source src="video_samples/1/4992_41797_000004_000002-The_Great_Gatsby_step_32.mp4" type="video/mp4">
+                  Your browser does not support the video element.
+                </video>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+</div>
+
+
+
 </html>
