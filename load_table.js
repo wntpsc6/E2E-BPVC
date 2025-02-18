@@ -199,7 +199,7 @@ music_filelist = [
     // "music_snr_7_7021_85628_000002_000000-5683_32879_000007_000000-musdb_train_018_stream_3.wav"
 ]
 
-generate_music_vc('clean_vc', clean_filelist, 1);  
+generate_clean_vc('clean_vc', clean_filelist, 1);  
 generate_noise_vc('noise_vc', noise_filelist, 1);  
 generate_music_vc('music_vc', music_filelist, 1);  
 
